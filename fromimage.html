@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<title>kalocsai.js SVG from image generator</title>
+	<script src="kalocsai.js"></script>
+	</head>
+	<body id="mainbody" style="background-color:rgb(64,64,64)" onload="getoptions_fromimage()" >
+	<noscript>Please enable JavaScript!</noscript>
+	<table><tbody><tr>
+		<td style="color:white;">
+			<h4 style="background-color:yellow;color:black;">WARNING: this can take much time.</h4>
+			<h3>Image URL: <input id="imageurlinput" type="text" name="imageurlinput" value="logo.png" /></h3>
+			<h3>Upscale: <input id="upscalectr" type="range" name="upscalectr" min="1" max="20" value="10" onchange="getoptions_fromimage()" ><span id="upscalespan">10</span></h3>
+			<h3>Background: <input id="backgroundctr" type="range" name="backgroundctr" min="1" max="4" value="1" onchange="getoptions_fromimage()" ><span id="backgroundspan">black</span></h3>
+			<h3><button id="startbutton" onclick="app_fromimage()" >START</button></h3>
+			<div id="savelink"></div>
+		</td>
+		<td>
+			<div id="svgcontainer"></div>
+		</td>
+	</tr></tbody></table>
+	</body>
+</html>

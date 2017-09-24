@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<title>kalocsai.js symmetric SVG generator</title>
+	<script src="kalocsai.js"></script>
+	</head>
+	<body id="mainbody" onload="app_symmetric()" style="background-color:rgb(64,64,64)" >
+	<noscript>Please enable JavaScript!</noscript>
+	<table><tbody><tr>
+		<td style="color:white;">
+			<h3>Initial number of flowers ca.: <input id="flowernumctr" type="range" name="flowernumctr" min="1" max="40" value="10" onchange="app_symmetric()" ><span id="flowernumspan">10</span></h3>
+			<h3>Symmetry: <input id="symmetryctr" type="range" name="symmetryctr" min="3" max="8" value="4" onchange="app_symmetric()" ><span id="symmetryspan">4</span></h3>
+			<h3>Background: <input id="backgroundctr" type="range" name="backgroundctr" min="1" max="4" value="1" onchange="app_symmetric()" ><span id="backgroundspan">black</span></h3>
+			<div id="savelink"></div>
+		</td>
+		<td>
+			<div id="svgcontainer"></div>
+		</td>
+	</tr></tbody></table>
+	</body>
+</html>
