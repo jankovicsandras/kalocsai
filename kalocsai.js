@@ -39,7 +39,9 @@ var flowerdata = [
                   {name:'smallflowers2', flwsize:60},
                   {name:'smallflowers3', flwsize:60},
                   {name:'cyclamen1', flwsize:70},
-                  {name:'cyclamen2', flwsize:70}
+                  {name:'cyclamen2', flwsize:70},
+                  {name:'rose1', flwsize:100},
+                  {name:'rose2', flwsize:100}
 ];
 
 
@@ -748,6 +750,44 @@ function createSVGString(o){
 					<circle transform="translate(0.04 0.05)" fill="'+colors['yellow']+'" cx="0.82" cy="0.64" r="0.06" stroke-width="0" />\
 					<circle transform="translate(0.04 0.05)" fill="'+colors['yellow']+'" cx="0.25" cy="0.41" r="0.06" stroke-width="0" />\
 				</pattern>\
+				\
+				<pattern id="rose1" width="1" height="1" patternContentUnits="objectBoundingBox">\
+					<path fill="transparent" fill-opacity="0" stroke="'+colors['darkgreen']+'" stroke-width="0.02" d="M 0.49 0.43 Q 0.49 0.32 0.43 0.26 " />\
+					<path fill="transparent" fill-opacity="0" stroke="'+colors['darkgreen']+'" stroke-width="0.02" d="M 0.50 0.43 Q 0.49 0.34 0.51 0.24 " />\
+					<path fill="transparent" fill-opacity="0" stroke="'+colors['darkgreen']+'" stroke-width="0.02" d="M 0.52 0.43 Q 0.52 0.32 0.59 0.26 " />\
+					<circle fill="'+colors['yellow']+'" cx="0.43" cy="0.26" r="0.05" stroke-width="0" />\
+					<circle fill="'+colors['yellow']+'" cx="0.51" cy="0.24" r="0.05" stroke-width="0" />\
+					<circle fill="'+colors['yellow']+'" cx="0.59" cy="0.260" r="0.05" stroke-width="0" />\
+					<path fill="'+colors['darkred']+'" stroke="'+colors['darkgreen']+'" stroke-width="0.01" d="M 0.44 0.66 Q 0.31 0.48 0.40 0.38 Q 0.43 0.34 0.39 0.30 Q 0.33 0.27 0.27 0.39 Q 0.26 0.63 0.44 0.66 Z"/>\
+					<path fill="'+colors['darkred']+'" stroke="'+colors['darkgreen']+'" stroke-width="0.01" d="M 0.47 0.65 Q 0.43 0.54 0.45 0.46 Q 0.47 0.40 0.44 0.37 Q 0.40 0.35 0.37 0.48 Q 0.37 0.62 0.47 0.65 Z"/>\
+					<path fill="'+colors['darkred']+'" stroke="'+colors['darkgreen']+'" stroke-width="0.01" d="M 0.60 0.63 Q 0.72 0.59 0.75 0.45 Q 0.75 0.30 0.67 0.29 Q 0.62 0.30 0.62 0.37 Q 0.68 0.51 0.60 0.63 Z"/>\
+					<path fill="'+colors['darkred']+'" stroke="'+colors['darkgreen']+'" stroke-width="0.01" d="M 0.49 0.66 Q 0.60 0.66 0.64 0.56 Q 0.67 0.40 0.60 0.37 Q 0.53 0.40 0.56 0.49 Q 0.57 0.59 0.49 0.66 Z"/>\
+					<path fill="'+colors['darkred']+'" stroke="'+colors['darkgreen']+'" stroke-width="0.01" d="M 0.48 0.66 Q 0.53 0.66 0.55 0.54 Q 0.57 0.42 0.50 0.42 Q 0.44 0.43 0.44 0.54 Q 0.44 0.66 0.48 0.66 Z"/>\
+					<path fill="'+colors['darkgreen']+'" stroke-width="0" d="M 0.52 1 Q 0.58 0.92 0.52 0.89 L 0.48 0.88 Q 0.46 0.94 0.48 1 L 0.52 1 Z"/>\
+					<path fill="'+colors['red']+'" stroke="'+colors['darkred']+'" fill-rule: evenodd stroke-width="0.01" d="M 0.50 0.89 Q 0.59 0.89 0.63 0.84 Q 0.68 0.79 0.76 0.78 Q 0.85 0.77 0.88 0.67 Q 0.88 0.62 0.84 0.58 Q 0.79 0.48 0.82 0.39 Q 0.85 0.32 0.84 0.25 Q 0.84 0.18 0.77 0.18 Q 0.73 0.18 0.72 0.14 Q 0.71 0.11 0.66 0.11 Q 0.62 0.11 0.61 0.08 Q 0.6 0.06 0.52 0.06 Q 0.46 0.06 0.44 0.08 Q 0.42 0.11 0.38 0.11 Q 0.33 0.11 0.32 0.14 Q 0.3 0.18 0.25 0.18 Q 0.2 0.19 0.19 0.24 Q 0.17 0.31 0.18 0.38 Q 0.19 0.51 0.16 0.61 Q 0.14 0.76 0.23 0.78 Q 0.33 0.79 0.37 0.84 Q 0.41 0.89 0.50 0.89 Z M 0.5 0.65 Q 0.37 0.65 0.3 0.57 Q 0.26 0.44 0.3 0.32 Q 0.38 0.20 0.5 0.20 Q 0.66 0.20 0.72 0.31 Q 0.77 0.43 0.71 0.55 Q 0.65 0.65 0.5 0.65 Z"/>\
+					<path fill="transparent" fill-opacity="0" stroke="'+colors['darkgreen']+'" stroke-width="0.01" d="M 0.28 0.42 Q 0.22 0.41 0.17 0.42 M 0.28 0.51 Q 0.22 0.50 0.17 0.51 M 0.295 0.57 Q 0.21 0.57 0.14 0.63 M 0.32 0.60 Q 0.23 0.65 0.20 0.76 M 0.38 0.63 Q 0.31 0.69 0.30 0.79 M 0.43 0.65 Q 0.39 0.74 0.39 0.85 M 0.48 0.65 Q 0.53 0.75 0.50 0.90 M 0.56 0.65 Q 0.60 0.73 0.57 0.87 M 0.64 0.625 Q 0.71 0.69 0.70 0.80 M 0.69 0.59 Q 0.79 0.65 0.79 0.77 M 0.71 0.56 Q 0.82 0.58 0.88 0.63 M 0.73 0.51 Q 0.80 0.50 0.84 0.52 M 0.74 0.42 Q 0.79 0.41 0.83 0.42 M 0.176 0.29 Q 0.22 0.34 0.26 0.26 Q 0.30 0.15 0.43 0.20 Q 0.52 0 0.62 0.21 Q 0.74 0.15 0.76 0.25 Q 0.77 0.34 0.84 0.31 " />\
+					<path fill="'+colors['darkred']+'" stroke-width="0" d="M 0.5 0.88 Q 0.76 0.96 0.88 0.75 Q 0.99 0.58 0.92 0.48 Q 0.86 0.39 0.91 0.28 Q 0.75 0.35 0.83 0.58 Q 0.94 0.69 0.79 0.76 Q 0.65 0.80 0.62 0.84 Q 0.60 0.89 0.50 0.88 Z"/>\
+					<path fill="'+colors['darkred']+'" stroke-width="0" d="M 0.5 0.88 Q 0.36 0.96 0.23 0.88 Q 0.02 0.71 0.07 0.49 Q 0.11 0.37 0.05 0.27 Q 0.26 0.32 0.20 0.52 Q 0.14 0.73 0.20 0.75 Q 0.31 0.78 0.37 0.84 Q 0.42 0.90 0.50 0.88 Z"/>\
+					</pattern>\
+				\
+				<pattern id="rose2" width="1" height="1" patternContentUnits="objectBoundingBox">\
+					<path fill="transparent" fill-opacity="0" stroke="'+colors['darkgreen']+'" stroke-width="0.02" d="M 0.49 0.43 Q 0.49 0.32 0.43 0.26 " />\
+					<path fill="transparent" fill-opacity="0" stroke="'+colors['darkgreen']+'" stroke-width="0.02" d="M 0.50 0.43 Q 0.49 0.34 0.51 0.24 " />\
+					<path fill="transparent" fill-opacity="0" stroke="'+colors['darkgreen']+'" stroke-width="0.02" d="M 0.52 0.43 Q 0.52 0.32 0.59 0.26 " />\
+					<circle fill="'+colors['orange']+'" cx="0.43" cy="0.26" r="0.05" stroke-width="0" />\
+					<circle fill="'+colors['orange']+'" cx="0.51" cy="0.24" r="0.05" stroke-width="0" />\
+					<circle fill="'+colors['orange']+'" cx="0.59" cy="0.260" r="0.05" stroke-width="0" />\
+					<path fill="'+colors['pink']+'" stroke="'+colors['darkpink']+'" stroke-width="0.01" d="M 0.44 0.66 Q 0.31 0.48 0.40 0.38 Q 0.43 0.34 0.39 0.30 Q 0.33 0.27 0.27 0.39 Q 0.26 0.63 0.44 0.66 Z"/>\
+					<path fill="'+colors['pink']+'" stroke="'+colors['darkpink']+'" stroke-width="0.01" d="M 0.47 0.65 Q 0.43 0.54 0.45 0.46 Q 0.47 0.40 0.44 0.37 Q 0.40 0.35 0.37 0.48 Q 0.37 0.62 0.47 0.65 Z"/>\
+					<path fill="'+colors['pink']+'" stroke="'+colors['darkpink']+'" stroke-width="0.01" d="M 0.60 0.63 Q 0.72 0.59 0.75 0.45 Q 0.75 0.30 0.67 0.29 Q 0.62 0.30 0.62 0.37 Q 0.68 0.51 0.60 0.63 Z"/>\
+					<path fill="'+colors['pink']+'" stroke="'+colors['darkpink']+'" stroke-width="0.01" d="M 0.49 0.66 Q 0.60 0.66 0.64 0.56 Q 0.67 0.40 0.60 0.37 Q 0.53 0.40 0.56 0.49 Q 0.57 0.59 0.49 0.66 Z"/>\
+					<path fill="'+colors['pink']+'" stroke="'+colors['darkpink']+'" stroke-width="0.01" d="M 0.48 0.66 Q 0.53 0.66 0.55 0.54 Q 0.57 0.42 0.50 0.42 Q 0.44 0.43 0.44 0.54 Q 0.44 0.66 0.48 0.66 Z"/>\
+					<path fill="'+colors['darkgreen']+'" stroke-width="0" d="M 0.52 1 Q 0.58 0.92 0.52 0.89 L 0.48 0.88 Q 0.46 0.94 0.48 1 L 0.52 1 Z"/>\
+					<path fill="'+colors['darkpink']+'" stroke="'+colors['darkred']+'" fill-rule: evenodd stroke-width="0.01" d="M 0.50 0.89 Q 0.59 0.89 0.63 0.84 Q 0.68 0.79 0.76 0.78 Q 0.85 0.77 0.88 0.67 Q 0.88 0.62 0.84 0.58 Q 0.79 0.48 0.82 0.39 Q 0.85 0.32 0.84 0.25 Q 0.84 0.18 0.77 0.18 Q 0.73 0.18 0.72 0.14 Q 0.71 0.11 0.66 0.11 Q 0.62 0.11 0.61 0.08 Q 0.6 0.06 0.52 0.06 Q 0.46 0.06 0.44 0.08 Q 0.42 0.11 0.38 0.11 Q 0.33 0.11 0.32 0.14 Q 0.3 0.18 0.25 0.18 Q 0.2 0.19 0.19 0.24 Q 0.17 0.31 0.18 0.38 Q 0.19 0.51 0.16 0.61 Q 0.14 0.76 0.23 0.78 Q 0.33 0.79 0.37 0.84 Q 0.41 0.89 0.50 0.89 Z M 0.5 0.65 Q 0.37 0.65 0.3 0.57 Q 0.26 0.44 0.3 0.32 Q 0.38 0.20 0.5 0.20 Q 0.66 0.20 0.72 0.31 Q 0.77 0.43 0.71 0.55 Q 0.65 0.65 0.5 0.65 Z"/>\
+					<path fill="transparent" fill-opacity="0" stroke="'+colors['darkred']+'" stroke-width="0.01" d="M 0.28 0.42 Q 0.22 0.41 0.17 0.42 M 0.28 0.51 Q 0.22 0.50 0.17 0.51 M 0.295 0.57 Q 0.21 0.57 0.14 0.63 M 0.32 0.60 Q 0.23 0.65 0.20 0.76 M 0.38 0.63 Q 0.31 0.69 0.30 0.79 M 0.43 0.65 Q 0.39 0.74 0.39 0.85 M 0.48 0.65 Q 0.53 0.75 0.50 0.90 M 0.56 0.65 Q 0.60 0.73 0.57 0.87 M 0.64 0.625 Q 0.71 0.69 0.70 0.80 M 0.69 0.59 Q 0.79 0.65 0.79 0.77 M 0.71 0.56 Q 0.82 0.58 0.88 0.63 M 0.73 0.51 Q 0.80 0.50 0.84 0.52 M 0.74 0.42 Q 0.79 0.41 0.83 0.42 M 0.176 0.29 Q 0.22 0.34 0.26 0.26 Q 0.30 0.15 0.43 0.20 Q 0.52 0 0.62 0.21 Q 0.74 0.15 0.76 0.25 Q 0.77 0.34 0.84 0.31 " />\
+					<path fill="'+colors['pink']+'" stroke-width="0" d="M 0.5 0.88 Q 0.76 0.96 0.88 0.75 Q 0.99 0.58 0.92 0.48 Q 0.86 0.39 0.91 0.28 Q 0.75 0.35 0.83 0.58 Q 0.94 0.69 0.79 0.76 Q 0.65 0.80 0.62 0.84 Q 0.60 0.89 0.50 0.88 Z"/>\
+					<path fill="'+colors['pink']+'" stroke-width="0" d="M 0.5 0.88 Q 0.36 0.96 0.23 0.88 Q 0.02 0.71 0.07 0.49 Q 0.11 0.37 0.05 0.27 Q 0.26 0.32 0.20 0.52 Q 0.14 0.73 0.20 0.75 Q 0.31 0.78 0.37 0.84 Q 0.42 0.90 0.50 0.88 Z"/>\
+					</pattern>\
 				\
 			</defs>';
 	
